@@ -4,6 +4,8 @@ Widget Button(
     String text,
     Color color,
     Color color2,
+    double height,
+    double width,
     Function() ontap,
     double radius,
     double left,
@@ -15,7 +17,8 @@ Widget Button(
     onTap: ontap,
     child: Container(
       alignment: Alignment.center,
-      height: 50.0,
+      width: width,
+      height: height,
       margin: EdgeInsets.fromLTRB(left, top, right, bottom),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),

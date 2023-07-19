@@ -62,7 +62,7 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
                         child: Text(widget.myDate, style: TextStyle(color: Colors.grey[800],
                             fontWeight: FontWeight.w500),),
                       ),
-                      SvgPicture.asset('asset/svg_icons/date_icon.svg',
+                      SvgPicture.asset('asset/date_icon.svg',
                         color: Colors.grey[900],
                         width: 25,
                         height: 25,

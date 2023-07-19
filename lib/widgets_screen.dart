@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testing_reusable_widgets/custon_button.dart';
+import 'package:testing_reusable_widgets/reusable_date_picker.dart';
 
 import 'custom_progressbar.dart';
 
@@ -106,8 +107,13 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                 const SizedBox(width: 20),
               ],
             ),
-          ],
-        ),
+            const DatePickerWidget(
+                myDate: "Enter Date Here",
+                left: 15.0,
+                top: 15.0,
+                right: 15.0,
+                bottom: 0.0)
+          ]),
       ),
     );
   }

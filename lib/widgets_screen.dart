@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:testing_reusable_widgets/custon_button.dart';
 import 'package:testing_reusable_widgets/reusable_date_picker.dart';
 import 'package:testing_reusable_widgets/reusable_textfield.dart';
+import 'package:testing_reusable_widgets/screen_two.dart';
 
 import 'custom_progressbar.dart';
 
@@ -119,6 +120,11 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
                   1, 30, "Please Enter a name", (){}, 0.0, 15.0, 0.0, 0.0),
               textField("Enter Email", 'asset/message.svg', false, true, nameController,
                   1, 30, "Please Enter an email", (){}, 0.0, 15.0, 0.0, 0.0),
+              const SizedBox(width: 15.0),
+              Button(
+                  "Next Screen", const Color(0xFFFFCCBB), const Color(0xFFBB00BB),
+                  30.0, 200.0, () => { Navigator.of(context).pushNamed(ScreenTwo.routeName)},
+                  50.0, 10.0, 10.0, 10.0, 10.0),
             ]),
         ),
       ]),

@@ -48,7 +48,7 @@ Widget textField(
                   borderSide: BorderSide.none,
                 ),
                 prefixIcon: isData ? Padding(
-                  padding: const EdgeInsets.fromLTRB(0.0, 5.0, 0.0, 5.0),
+                  padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0.0, 10.0),
                   child: SvgPicture.asset(image!, width: 0, color: Colors.black54,),
                 ) : null,
                 hintText: hint,

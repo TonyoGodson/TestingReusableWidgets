@@ -19,7 +19,7 @@ class _ScreenTwoState extends State<ScreenTwo> {
           elevation: 0,
           flexibleSpace: AppBarWidget(
             context: context,
-            onTap: (){},
+            onTap: navTo,
             shape: BoxShape.rectangle,
             color: const Color(0x2F2D88D8),
             color2: const Color(0xFF2D88D8),
@@ -53,5 +53,8 @@ class _ScreenTwoState extends State<ScreenTwo> {
             backPaddingBottom: 0.0,
           )),
     );
+  }
+  void navTo(){
+    Navigator.pop(context);
   }
 }

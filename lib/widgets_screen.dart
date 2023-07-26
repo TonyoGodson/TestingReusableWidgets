@@ -23,7 +23,9 @@ class _WidgetsScreenState extends State<WidgetsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Reusable Widgets"),
+      appBar: AppBar(title: const Text("Reusable Widgets", style: TextStyle(color: Colors.black),),
+        elevation: 0,
+        backgroundColor: Colors.white,
         centerTitle: true,
       ),
       backgroundColor: Colors.white,

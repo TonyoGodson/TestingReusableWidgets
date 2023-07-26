@@ -6,6 +6,7 @@ import 'package:testing_reusable_widgets/widgets_screen.dart';
 
 void main(){
   runApp( MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: WidgetsScreen(),
     routes: {
       ScreenTwo.routeName: (BuildContext context) => ScreenTwo(),
